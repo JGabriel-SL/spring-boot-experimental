@@ -34,6 +34,9 @@ public class FirstOne {
                 clients.save(c);
             });
 
+            List<Client> cli1 = clients.getClientById(1);
+            cli1.forEach(System.out::println);
+
             allClients = clients.findAll();
             allClients.forEach(System.out::println);
 
@@ -48,6 +51,8 @@ public class FirstOne {
             } else {
                 allClients.forEach(System.out::println);
             }
+
+
         };
     }
 
